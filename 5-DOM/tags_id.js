@@ -16,3 +16,10 @@ link.style.color="red";
 link.classList.add('btn');
 console.log(link.innerHTML);
 
+
+const emails = document.getElementsByName('e-posta');
+console.log(emails);
+
+const birds= document.getElementsByClassName('kusu');
+console.log(birds);
+
