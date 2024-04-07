@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" id="button" value="Send" >
+    <h1 id="greet">Click Here</h1>
+    <h2 id="mouse">Mouse Click Event</h2>
+
+    <h3 id="key">Keyboard Event</h3>
+
+    <form action="#" id="selectColor">
+        <label for="color">Choose a color</label>
+        <select name="colors" id="select">
+            <option value="red">RED</option>
+            <option value="blue">BLUE</option>
+            <option value="purple">PURPLE</option>
+            <option value="orange">ORANGE</option>
+            <option value="pink">PINK</option>
+        </select>
+        <br><br>
+        <input type="submit" value="SEND">
+    </form>
+
+    <!-- Event Bubbling Example -->
+
+    <div class="container">
+        <div>
+            <p id="text">SUBMIT FORM</p>
+        </div>
+        <form action="/action_page.php" class="inputText">
+        <label for="fname" id="l1">First Name:</label>
+        <input type="text" id="fname" name="fname" value="John"> <br>
+        <label for="lname" id="l2">Last Name:</label> <br>
+        <input type="text" id="lname" name="lname" value="Dera" id="label2">
+        <br><br>
+        </form>
+        <button type="button" id="button">Send</button>
+        <form action="#" id="selectColor">
+        <label for="color">Choose a color</label>
+        <select name="colors" id="selectC">
+            <option value="red">RED</option>
+            <option value="blue">BLUE</option>
+            <option value="purple">PURPLE</option>
+            <option value="orange">ORANGE</option>
+            <option value="pink">PINK</option>
+        </select>
+        <br><br>
+    </form>
+    </div>
+
+    <!-- example event.stopPropagation() , event.preventDefault() -->
+    <input type="submit" valur="send" id="innerButton">
+    <a href="link" id="link">link click</a>
+    <br><br>
+    <input id="myInput" placeholder="Adınızı giriniz">
+    <br><br>
+    <input type="text" id="input" placeholder="Metin girin...">
+    <br><br>
+    <input type="text" id="tus" placeholder="Tuşa basın...">
+    
+
+    <script src="dom.events.js"></script>
+</body>
+</html>
