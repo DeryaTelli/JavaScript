@@ -42,7 +42,7 @@ let number5= 55;
 number5=number5.toString();
 console.log("number: ",number5, typeof(number5));
 
-console.log(12 / "6") //6 degerini verecektir
+console.log(12 / "6") //2 degerini verecektir
 
 //1
 console.log("foo" + +"bar")
